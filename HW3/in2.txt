@@ -1,0 +1,10 @@
+2
+Jack
+3
+Braised Pork Rice;2;35.0;DISC10
+Fried Chicken;1;60.0;NONE
+Bubble Tea;3;25.0;DISC20
+Alice
+2
+Sushi;4;50.0;NONE
+Green Tea;2;20.0;DISC10

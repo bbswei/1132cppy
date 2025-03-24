@@ -1,0 +1,14 @@
+Customer: Jack
+Number of Items: 3
+Order Details:
+1. Braised Pork Rice - Quantity: 2, Unit Price: 35.00 TWD, Subtotal: 63.00 TWD
+2. Fried Chicken - Quantity: 1, Unit Price: 60.00 TWD, Subtotal: 60.00 TWD
+3. Bubble Tea - Quantity: 3, Unit Price: 25.00 TWD, Subtotal: 60.00 TWD
+Total Cost: 183.00 TWD
+
+Customer: Alice
+Number of Items: 2
+Order Details:
+1. Sushi - Quantity: 4, Unit Price: 50.00 TWD, Subtotal: 200.00 TWD
+2. Green Tea - Quantity: 2, Unit Price: 20.00 TWD, Subtotal: 36.00 TWD
+Total Cost: 236.00 TWD

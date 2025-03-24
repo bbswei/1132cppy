@@ -1,0 +1,29 @@
+Customer: Sophie
+Number of Items: 1
+Order Details:
+1. Cake - Quantity: 6, Unit Price: 113.09 TWD, Subtotal: 542.83 TWD
+Total Cost: 542.83 TWD
+
+Customer: Peter
+Number of Items: 3
+Order Details:
+1. Sushi - Quantity: 3, Unit Price: 109.91 TWD, Subtotal: 329.73 TWD
+2. Coffee - Quantity: 8, Unit Price: 199.64 TWD, Subtotal: 1437.41 TWD
+3. Bubble Tea - Quantity: 3, Unit Price: 182.40 TWD, Subtotal: 492.48 TWD
+Total Cost: 2259.62 TWD
+
+Customer: Riley
+Number of Items: 2
+Order Details:
+1. Fried Chicken - Quantity: 7, Unit Price: 62.18 TWD, Subtotal: 391.73 TWD
+2. Coffee - Quantity: 1, Unit Price: 47.31 TWD, Subtotal: 42.58 TWD
+Total Cost: 434.31 TWD
+
+Customer: Mia
+Number of Items: 4
+Order Details:
+1. Coffee - Quantity: 5, Unit Price: 86.61 TWD, Subtotal: 346.44 TWD
+2. Fried Chicken - Quantity: 3, Unit Price: 60.35 TWD, Subtotal: 181.05 TWD
+3. Steak - Quantity: 3, Unit Price: 83.50 TWD, Subtotal: 225.45 TWD
+4. Bubble Tea - Quantity: 1, Unit Price: 189.10 TWD, Subtotal: 170.19 TWD
+Total Cost: 923.13 TWD
