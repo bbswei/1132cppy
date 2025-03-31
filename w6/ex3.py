@@ -12,43 +12,32 @@ Update for other cities in the same group.
 >>> City6 City5
 >>> q
 '''
-
 def main():
     num = int(input())
-    city = [('City' + str(i)) for i in range(1, num+1)]
-    city_group = dict(zip(range(1, num+1), city)) # initial_group
-    # print(city)
+    city_name = [('City' + str(i)) for i in range(1, num+1)] 
+    city_group = dict(zip(city_name, range(1, num+1), )) # initial_group
     # print(city_group)
+    # >>> {'City1': 1, 'City2': 2, 'City3': 3, 'City4': 4, 'City5': 5, 'City6': 6, 'City7': 7, 'City8': 8, 'City9': 9, 'City10': 10}
+
     while True:
         connection = input()
         if connection == 'q':
             break
-        
-        info = list(connection.split(" "))
-        print(info)
 
-            
+        a, b = connection.split(" ")
+        group1 = city_group[a]
+        group2 = city_group[b]
 
-
-    # while True:
-    #     line = input().strip()
-    #     if line == 'q':
-    #         break
-    #     try:
-    #         num = int(line)
-    #         cities = [i for i in range(num)]
-    #     except:
-
-    #         print(cities)
+        new_group = num + 1
+        num += 1
+        for city, group in city_group.items():
+            if group == group1 or group == group2:
+                city_group[city] = new_group
+    # print(city_group)
+    return len(set(city_group.values()))
 
 
-        # for idx, info in line:
-        #     num_of_cities = int(line)
-        # for line in range(num_of_cities):
-        #     connection = line.strip()
-        #     print(connection)
-
-
-main()
+if __name__ == '__main__':
+    print(main())
 
 
