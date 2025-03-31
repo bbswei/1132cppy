@@ -1,9 +1,9 @@
 ### CPPY HW1
 
 '''
-# Calculate the perimeter (sum of the three sides) of the triangle.
-# Calculate the area (using Heron's formula) of the triangle. 𝐴 = 𝑠(𝑠 − 𝑎)(𝑠 − 𝑏)(𝑠 − 𝑐) , where 𝑠 = 1/2(𝑎 + 𝑏 + 𝑐)
-# Classify the triangle based on the properties of its sides into one of the following types.
+Calculate the perimeter (sum of the three sides) of the triangle.
+Calculate the area (using Heron's formula) of the triangle. 𝐴 = 𝑠(𝑠 − 𝑎)(𝑠 − 𝑏)(𝑠 − 𝑐) , where 𝑠 = 1/2(𝑎 + 𝑏 + 𝑐)
+Classify the triangle based on the properties of its sides into one of the following types.
 '''
 
 def perimeter_calculator(side1, side2, side3):
