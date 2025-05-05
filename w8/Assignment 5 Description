@@ -1,0 +1,23 @@
+---- Assignment 5: Dorm Cleaning Patrol ----
+### Objective
+Practice how to write a Python program that using recursion and string operations.
+### Description
+You are part of the student dormitory cleaning patrol. Your job is to check different sections of the dorm to identify how many dirty zones (groups of dirty tiles) exist, so you can assign them to cleaning teams.
+
+The layout consists of a 2D dorm map, where:
+'#' represents a dirty tile that needs cleaning
+'.' represents a clean tile
+Dirty zone is a group of connected '#' tiles that touch either vertically or horizontally (not diagonally). Your task is to count how many such zones exist in each layout.
+
+- Input Formats
+The first line contains a single integer 
+ (the number of test cases)
+For each test case:
+
+The first line contains an integer 
+ (the number of rows and columns in the dorm layout.)
+The next 
+ lines each contain a string of '.' and '#' of equal length, representing one row of the dorm layout.
+
+- Output Formats
+For each test case, print a single integer (the number of dirty zones in the dorm layout.)

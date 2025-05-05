@@ -55,16 +55,3 @@ def dirt_detector():
 
 if __name__ == "__main__":
     dirt_detector()
-
-
-
-
-
-
-
-
-
-
-
-
-

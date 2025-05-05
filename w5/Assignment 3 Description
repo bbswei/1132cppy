@@ -1,0 +1,35 @@
+---- Assignment 3: Ordering System ----
+### Objective
+Practice step-by-step program development by systematically verifying input, processing logic, and output format.
+### Description
+A restaurant receives multiple orders from different customers. Each customer places an order containing multiple food items, and each item has a specified quantity, unit price, and optional discount.
+
+Your task is to process and calculate the total cost of each customer's order, applying discounts where applicable, and display a detailed order summary in the specified format.
+
+Input
+The first line contains a positive integer, which represents the number of customers.
+For each customer, the input consists of:
+A line containing the customer's name.
+A line containing a positive integer 
+, representing the number of food items ordered.
+The next lines each describe a food item, formatted as follows:
+Food Name;Quantity;Unit Price;Discount Code
+Food Name: A string.
+Quantity: A positive integer.
+Unit Price: A floating-point number.
+Discount Code: Either "DISC10" (10% discount), "DISC20" (20% discount), or "NONE" (no discount).
+
+Output
+For each customer, output the order summary as follows:
+        Customer: <Name>
+        Number of Items: <n>
+        Order Details:
+        1. <Food Name> - Quantity: <Quantity>, Unit Price: <Unit Price> TWD, Subtotal: <Subtotal> TWD
+        2. <Food Name> - Quantity: <Quantity>, Unit Price: <Unit Price> TWD, Subtotal: <Subtotal> TWD
+        ...
+        Total Cost: <Total Cost> TWD
+            
+Each item should be numbered in order
+All numerical values (unit price, subtotal, total cost) must be formatted to two decimal places (e.g., 35.00 TWD).
+The total cost will be the sum of the subtotals after rounding to two decimal places.
+There will be a line break after each customer.

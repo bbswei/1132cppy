@@ -1,0 +1,17 @@
+---- Assignment 4: Maximum Profit ----
+### Objective
+Practice how to write a Python program that includes basic components and basic algorithms.
+### Description
+You are given an array prices where prices[i] represents the price of a stock on the i th day.
+
+Your task is to determine the maximum profit that can be obtained by selecting a single day to buy one stock and a different day in the future to sell that stock.
+
+You may not sell a stock before you buy it. If no profit can be made, return 0.
+
+
+- Input Formats
+A single line containing space-separated integers representing the stock prices over days.
+
+- Output Formats
+A single integer representing the maximum profit that can be achieved.
+If no profit is possible, return 0.
