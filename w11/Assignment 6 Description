@@ -1,0 +1,20 @@
+---- Assignment 6: Bank Account Management System ----
+### Objective
+Practice writing a Python program that applies object-oriented programming, exception handling, and date management to simulate a simple banking system.
+### Description
+Imagine you have been appointed as the lead architect of a brand-new digital bank!
+Your mission is to build the core system that manages customer accounts with absolute precision.
+
+The system must be able to:
+
+Open new accounts for customers
+Process deposits and withdrawals safely
+Keep track of every account’s current balance
+Enable smooth transfers between accounts
+Close accounts securely once customers are ready to move on
+And, of course, automatically apply monthly interest to reward your customers — without them even needing to ask!
+Every day, your bank receives some transaction requests, each tagged with a date. The transactions are guaranteed to arrive in chronological order.
+
+At the start of each new month, the system must apply the previous month's interest to every active account (Even accounts created shortly before month-end are entitled to the full interest for the previous month). The interest is calculated at a fixed rate of 1% per month of the current balance, truncated to the integer part, and then credited to the account immediately, before processing any new operations.
+
+Build your Bank Account Management System carefully — your customers (and your reputation!) are counting on you.
