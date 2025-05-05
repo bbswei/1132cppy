@@ -18,7 +18,7 @@ class BankAccount:
             return
 
         try:
-            amount = float(amount)
+            amount = int(amount)
             if amount < 0:
                 raise ValueError
         except (ValueError, TypeError):
@@ -41,6 +41,7 @@ class BankAccount:
                 raise InsuffError
         except (ValueError, TypeError):
             print("Invalid transaction amount")
+            return
         except InsuffError:
             print("Insufficient balance")
             return
@@ -86,7 +87,7 @@ class BankAccount:
             return
 
         try:
-            amount = float(amount)
+            amount = int(amount)
             if amount < 0:
                 raise ValueError
             if amount > self.balance:
@@ -104,20 +105,9 @@ class BankAccount:
 def parse(date_str):
     return datetime.strptime(date_str, "%Y-%m-%d")
 
-def main():
-    """
-    2021-10-15 DEPOSIT A 1000
-    2021-10-20 OPEN A aa
-    2021-10-25 OPEN B 500
-    2021-10-31 OPEN C 600
-    2021-11-01 OPEN D 1000
-    2022-01-05 TRANSFER B D 500
-    2022-01-05 BALANCE D
-    q
-    """
+if __name__ == "__main__":
     accounts = {}
     last_interest_ym = None
-
     while True:
         command = input().strip()
         if command == "q":
@@ -139,7 +129,7 @@ def main():
         if parts[1] == "OPEN":
             acc_id = parts[2]
             try:
-                balance = float(parts[3])
+                balance = int(parts[3])
                 if acc_id in accounts:
                     print("Account ID already exists")
                     continue
@@ -193,7 +183,5 @@ def main():
                 accounts[acc_id].close()
             else:
                 print("Account not found")
-
-main()
 
        
