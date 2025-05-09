@@ -1,0 +1,24 @@
+2
+---
+Calculus
+Gilbert Strang, Holiday James
+2004
+10th
+-
+print
+rm_author Holiday James
+update_title Calculus 2
+update_pubyear 2012
+print
+---
+Introduction to Probability
+Tim Cheney, David Kincaid, Holiday James
+1993
+4th
+-
+add_author Andrew Waldron
+update_title Introduction to Probability and Statistics
+update_pubyear 2013
+update_edition 5th
+print
+---

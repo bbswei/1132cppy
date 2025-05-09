@@ -1,0 +1,42 @@
+## Book Management System
+Description
+The publishing industry frequently handles books that have multiple authors and different editions. To effectively manage such books, software systems must accurately represent each book's details. In this exercise, you will create a Book class that can accommodate these requirements.
+
+Instructions
+You need to implement a Book class with the following features:
+
+Attributes
+title: a string representing the title of the book.
+authors: a list of strings representing the authors of the book.
+publication_year: an integer representing the year the book was
+edition: a string representing the edition of the book.
+Initialization (__init__ method)
+String representation (__str__ method): This method should return a string in the following format:
+"Title: {title}; Authors: {authors}; Year: {publication_year}; Edition: {edition}"
+Other methods:
+add_author
+remove_author
+update_edition
+update_publication_year
+update_title
+Notes:
+The {authors} section should be seperated by a comma and a space.
+The {authors} section should be sorted in alphabetical order.
+Input
+The first line contains a number representing the testcase count.
+
+The folllowing 4 lines contain the book's information.
+
+After that, the command lines will be given after a line of dash (“-”), and end with a line of three dashes (“—”).
+
+Commands are as follows:
+
+add_author {author}
+rm_author {author}
+update_edition {edition}
+update_pubyear {year}
+update_title {title}
+print
+
+Output
+Whenever the print command is given, the book's information should be printed.
