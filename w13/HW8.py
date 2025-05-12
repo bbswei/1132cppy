@@ -48,8 +48,7 @@ class Undergraduate(object):
     def showStatus(self):
         print("\n" + 
               f"--- {self.name}'s Status ---\n" +
-              f"Borrowed Books: {self.book}\n" +
-              "\n")
+              f"Borrowed Books: {sorted(self.book)}\n")
 
 class Graduate(Undergraduate):
     lab_booked_list = []
@@ -59,17 +58,17 @@ class Graduate(Undergraduate):
         self.lab = {}
 
     def applyLAB(self, lab_id, date):
-        if lab_id in Graduate.lab_booked_list:
+        if lab_id in self.__class__.lab_booked_list:
             print(f'Lab {lab_id} is already booked on {date}.')
         else:
+            self.__class__.lab_booked_list.append(lab_id)
             self.lab[date] = lab_id
 
     def showStatus(self):
         print("\n" +
               f"--- {self.name}'s Status ---\n" +
-              f"Borrowed Books: {self.book}\n" +
-              f"Reserved Labs: {self.lab}\n" +
-              "\n")
+              f"Borrowed Books: {sorted(self.book)}\n" +
+              f"Reserved Labs: {dict(sorted(self.lab.items()))}\n")
     
 class Professor(Graduate):
     con_booked_list = []
@@ -79,18 +78,18 @@ class Professor(Graduate):
         self.confer = {}
 
     def applyConference(self, con_id, date):
-        if con_id in Professor.con_booked_list:
+        if con_id in self.__class__.con_booked_list:
             print(f'Conference Room {con_id} is already booked on {date}.')
         else:
+            self.__class__.con_booked_list.append(con_id)
             self.confer[date] = con_id
 
     def showStatus(self):
         print("\n" +
               f"--- {self.name}'s Status ---\n" +
-              f"Borrowed Books: {self.book}\n" +
-              f"Reserved Labs: {self.lab}\n" +
-              f"Reserved Conferences: {self.confer}\n" +
-              "\n")
+              f"Borrowed Books: {sorted(self.book)}\n" +
+              f"Reserved Labs: {dict(sorted(self.lab.items()))}\n" +
+              f"Reserved Conferences: {dict(sorted(self.confer.items()))}\n")
 
 
 def main():
@@ -144,7 +143,7 @@ def main():
         elif command == 'APPLY_LAB':
             user_name, date, lab_id = parts[1], parts[2], parts[3]
             if user_name in user_map:
-                if isinstance(user_map[user_name], Undergraduate) and not isinstance(user_map[user_name], Graduate):
+                if isinstance(user_map[user_name], Undergraduate) and not isinstance(user_map[user_name], Graduate): 
                     print(f'{user_name} is not allowed to reserve labs.')
                 else:
                     user_map[user_name].applyLAB(lab_id, date)
