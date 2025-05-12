@@ -1,0 +1,15 @@
+Lab LabA is already booked on 2025-06-01.
+
+--- Bob's Status ---
+Borrowed Books: ['PythonBasics', 'PythonBasics', 'PythonBasics']
+Reserved Labs: {'2025-06-01': 'LabA', '2025-06-02': 'LabB'}
+
+No copies of PythonBasics left.
+Lab LabA is already booked on 2025-06-01.
+Conference Room RoomA is already booked on 2025-07-01.
+
+--- ProfChen's Status ---
+Borrowed Books: ['DataStructures']
+Reserved Labs: {'2025-06-01': 'LabC'}
+Reserved Conferences: {'2025-07-01': 'RoomA'}
+

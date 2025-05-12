@@ -1,0 +1,23 @@
+Description
+There is a system that manages library users and their interactions with the library, such as borrowing books, returning books, searching for available books, and making room reservations.
+You are tasked with building the library management system that handles different types of users and allows them to perform specific actions.
+lib_user_system.png
+In this library system, different types of users have varying privileges and capabilities. All users share some fundamental library functions:
+
+Searching for books to check their availability.
+Borrowing books, up to a certain limit specific to their user type.
+Returning books they have borrowed.
+Viewing their personal status within the system.
+Beyond these common actions, each user type has specific characteristics and abilities:
+Undergraduate Student:
+
+Has a borrowing limit of 5 books.
+Graduate Student:
+
+Has a borrowing limit of 8 books.
+Can apply to reserve labs.
+Professor:
+
+Has a borrowing limit of 10 books.
+Can apply to reserve labs.
+Can apply to reserve conference rooms.

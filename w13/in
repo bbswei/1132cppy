@@ -1,0 +1,12 @@
+PythonBasics 2 DataStructures 5 MachineLearning 3
+CREATE_USER U Bob
+CREATE_USER G David
+CREATE_USER P Alice
+SEARCH PythonBasics
+BORROW Bob PythonBasics
+SHOW Bob
+APPLY_LAB David 2025-05-10 A
+SHOW David
+APPLY_CONFERENCE Alice 2025-05-10 B
+SHOW Alice
+EXIT

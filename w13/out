@@ -1,0 +1,15 @@
+PythonBasics has 2 copies left.
+
+--- Bob's Status ---
+Borrowed Books: ['PythonBasics']
+
+
+--- David's Status ---
+Borrowed Books: []
+Reserved Labs: {'2025-05-10': 'A'}
+
+
+--- Alice's Status ---
+Borrowed Books: []
+Reserved Labs: {}
+Reserved Conferences: {'2025-05-10': 'B'}
