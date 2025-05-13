@@ -105,7 +105,7 @@ class BankAccount:
 def parse(date_str):
     return datetime.strptime(date_str, "%Y-%m-%d")
 
-if __name__ == "__main__":
+def main():
     accounts = {}
     last_interest_ym = None
     while True:
@@ -185,3 +185,5 @@ if __name__ == "__main__":
                 print("Account not found")
 
        
+if __name__ == "__main__":
+    main()
