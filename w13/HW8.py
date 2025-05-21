@@ -63,7 +63,7 @@ class Graduate(Undergraduate):
     lab_booked_list = []
 
     def __init__(self, name, book_limit=8):
-        Undergraduate.__init__(self, name, book_limit)
+        super().__init__(name, book_limit)
         self.lab = {}
 
     def applyLAB(self, lab_id, date):
@@ -85,7 +85,7 @@ class Professor(Graduate):
     con_booked_list = []
 
     def __init__(self, name, book_limit=10):
-        Graduate.__init__(self, name, book_limit)
+        super().__init__(name, book_limit)
         self.confer = {}
 
     def applyConference(self, con_id, date):
